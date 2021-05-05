@@ -81,6 +81,10 @@ ad_enable: false
 ad_wechat_img: "/img/broadcast/wechat_public.png"
 ad_wechat_desc: "【青衣极客】公众号"
 
+# set personal contact
+wechat_qr: "/img/platform/wuyi-qr.jpg" 
+#tg_link: "https://t.me/cnbluegeek"
+
 # auto push to search engine
 push_baidu: false
 
