@@ -1,0 +1,7 @@
+
+{% if include.opencv == true %}
+<script type="text/javascript" src="{{ "/js/opencv.js" | prepend: site.baseurl }}"></script>
+{% endif %}
+{% if include.tf == true %}
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+{% endif %}

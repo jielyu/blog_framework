@@ -1,0 +1,86 @@
+# Site settings
+title: xxx's Blog
+SEOTitle: xxx | xxx's Blog
+header-img: img/home_header.png
+email: xxx@gmail.com
+description: "slogan"
+keyword: "Machine Learning, 机器学习, Deep Learning, 深度学习, Leetcode, 面试刷题, Python, C, C++, 计算机视觉, Computer Vision, CV, 编程, 程序员, IT, 互联网, 科技, CS, 计算机科学, 软件开发, 算法设计, 大数据分析, 可视化, 网络安全"
+url: "https://blog.bluegeek.me/"          # your host, for absolute URL
+self_url: "https://blog.bluegeek.me/"
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/cnbluegeek/comments.git" # you code repository
+#google_site_verification: "TAe6I0p_P0yAKNp6dH_9U6kIogHfiArLRjjc_xioT6E"
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Do not go gentle into that good night."
+sidebar-avatar: /img/portrait.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# SNS settings
+RSS: true
+#weibo_username:     bluegeek2020
+#zhihu_username:     cnbluegeek
+#github_username:    cnbluegeek
+#twitter_username:   cnbluegeek
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["README.md", "LICENSE"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+#gems: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate 
+  - jekyll-sitemap
+# theme: "jekyll-theme-midnight"
+#remote_theme: "mmistakes/minimal-mistakes"
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+# hard_wrap: true
+
+# Customed Collections (not allow to change once release)
+collections:
+  demos:
+    output: true
+    permalink: /demos/:year/:month/:day/:title/
+  resources:
+    output: true
+    permalink: /resources/:year/:month/:day/:title/
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# add issue link for comment
+github_issue: false
+# git gitalk comment
+gitalk_enable: false
+gitalk_clientID: ""
+gitalk_clientSecret: ""
+gitalk_repo: ""
+gitalk_owner: ""
+gitalk_distractionFreeMode: true
+
+# add ad in footer.html
+ad_enable: false
+ad_wechat_img: "/img/broadcast/wechat_public.png"
+ad_wechat_desc: "【青衣极客】公众号"
+
+# auto push to search engine
+push_baidu: false
+

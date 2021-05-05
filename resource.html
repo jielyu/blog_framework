@@ -1,0 +1,50 @@
+---
+layout: page
+title: "Resource"
+description: "资源分享"
+header-img: "img/home_header.png"
+---
+
+<b class="text-warning">【声明】本站资源链接都是通过网络获取，如果存在侵权，请联系本人删除。</b>
+
+<style>
+    .resource_share a {color:rgb(0, 110, 255);}
+</style>
+
+<h2 class="text-center" style="margin-top:2em;">永久资源</h2>
+<hr/>
+<div class="resource_share">
+    <ul>
+        <li>永久资源</li>
+    </ul>
+</div>
+
+<h2 class="text-center" style="margin-top: 3em;">临时资源</h2>
+<hr/>
+
+{% for resource in site.resources reversed %}
+<div class="post-preview">
+    <a href="{{ resource.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ resource.title }}
+        </h2>
+        {% if resource.subtitle %}
+        <h3 class="post-subtitle">
+            {{ resource.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if resource.lang == 'en' %}
+                {{ resource.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ resource.content | strip_html | truncate:200 }}
+            {% endif %}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if resource.author %}{{ resource.author }}{% else %}{{ resource.title }}{% endif %} on {{ resource.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+

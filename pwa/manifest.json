@@ -1,0 +1,19 @@
+{
+  "name": "Blue Geek's Blog",
+  "short_name": "CNBG Blog",
+  "description": "Personal Blog",
+  "icons": [{
+    "src": "icons/small.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "icons/middle.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
