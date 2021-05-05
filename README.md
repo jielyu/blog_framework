@@ -14,6 +14,11 @@
 
 第二步： 安装ruby (带devkit版)
 
+msys和ruby的安装包
+
+链接: https://pan.baidu.com/s/16Yh7vZBmbJOSpWbBjHpnJg  密码: kaln
+
+
 第三步：ruby安装后弹出的cmd中选择3，安装工具链
 
 第四步： 安装jekyll、bundler
